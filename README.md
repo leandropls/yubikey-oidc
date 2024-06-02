@@ -38,14 +38,6 @@ Before you can use this package, you must have the following tools installed:
 - `ykman`: [Yubikey Manager CLI](https://docs.yubico.com/software/yubikey/tools/ykman/)
 - `yubico-piv-tool`: [Yubico PIV Tool](https://developers.yubico.com/yubico-piv-tool/)
 
-### Installing from PyPI
-
-To install the `yubikey-oidc` package, you will need to have Python 3.12 or higher. You can install the package using `pip`.
-
-```bash
-pip install yubikey-oidc
-```
-
 ### Installing from Source
 
 To install from the source, follow these steps:
