@@ -49,6 +49,16 @@ def deploy_openid(iss: str, sub: str, slot: str, s3_bucket: str) -> None:
     oidc.deploy_openid(s3_bucket)
     click.echo("OpenID configuration deployed.")
 
+@cli.command()
+@click.option("--iss", required=True, type=str, help="Issuer URL")
+@click.option("--sub", required=True, type=str, help="Subject identifier")
+@click.option("--slot", required=True, type=str, help="Yubikey slot identifier")
+def print_jwks(iss: str, sub: str, slot: str) -> None:
+    """Print JWKS configuration."""
+    oidc = YubikeyOIDC(iss=iss, sub=sub, slot=slot)
+    import json
+    click.echo(json.dumps(oidc.jwks, indent=2))
+
 
 @cli.command()
 @click.option("--iss", required=True, type=str, help="Issuer URL")
