@@ -84,6 +84,19 @@ yubid create-token --iss <ISS> --sub <SUB> --slot <SLOT> --duration <DURATION>
 - `--slot`: Yubikey slot identifier
 - `--duration`: Token expiration duration in seconds
 
+#### `print-jwks`
+
+Print the JWKS configuration for the issuer.
+
+```bash
+yubid print-jwks --iss <ISS> --sub <SUB> --slot <SLOT>
+```
+
+- `--iss`: Issuer URL
+- `--sub`: Subject identifier
+- `--slot`: Yubikey slot identifier
+
+
 #### `deploy-openid`
 
 Deploy OpenID configuration to an S3 bucket.
