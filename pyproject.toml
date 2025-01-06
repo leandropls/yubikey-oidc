@@ -13,6 +13,7 @@ yubid = "yubikey_oidc.cli:cli"
 python = "^3.12"
 PyJWT = "^2.8.0"
 boto3 = "^1.34.117"
+cryptography = "^44.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.4.2"
