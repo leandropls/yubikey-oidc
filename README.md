@@ -96,6 +96,17 @@ yubid print-jwks --iss <ISS> --sub <SUB> --slot <SLOT>
 - `--sub`: Subject identifier
 - `--slot`: Yubikey slot identifier
 
+#### `print-openid-configuration`
+
+Print the OpenID configuration for the issuer.
+
+```bash
+yubid print-openid-configuration --iss <ISS> --sub <SUB> --slot <SLOT>
+```
+
+- `--iss`: Issuer URL
+- `--sub`: Subject identifier
+- `--slot`: Yubikey slot identifier
 
 #### `deploy-openid`
 
